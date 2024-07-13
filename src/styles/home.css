@@ -1,0 +1,120 @@
+.localWeatherReport {
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.currentReport {
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.col1 {
+    width: 30vw;
+    padding: 2vw;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.location_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.city_image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.city_image img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.city_information {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    font-weight: bold;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.location_details .location {
+    font-size: 20px;
+    color: #f9c157;
+    font-weight: bold;
+}
+
+.location_details .location_condition {
+    color: black;
+    font-weight: bold; 
+}
+
+.col2 {
+    width: 68vw;
+    padding: 2vw;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.col2 .highlights {
+    font-weight: bold;
+    font-size: 20px;
+    color: #f9c157;
+    padding-bottom: 20px;
+}
+
+.weather_information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.frame {
+    flex: 1 1 100px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2vw;
+}
+
+.frame img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; 
+}
+
+@media (max-width: 767px) {
+    .currentReport {
+        flex-direction: column;
+    }
+
+    .col1,
+    .col2 {
+        width: 100%;
+        padding: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .frame {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}

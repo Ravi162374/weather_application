@@ -1,0 +1,59 @@
+/* Base styles for header */
+header {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color:#1c205c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:white; 
+    padding: 10px 15px;
+}
+
+
+nav ul li .active {
+    color: red; 
+}
+
+@media (max-width: 768px) {
+    /* Adjust header padding for smaller screens */
+    header {
+        padding: 10px 15px;
+    }
+
+    /* Convert navigation to vertical stack for smaller screens */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 10px; /* Reduce gap between links */
+    }
+
+    nav ul li {
+        margin-bottom: 5px; /* Add spacing between list items */
+    }
+}
